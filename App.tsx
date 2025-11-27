@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { GameCard } from './components/GameCard';
-import { GeminiChat } from './components/GeminiChat';
 import { Game, ViewState } from './types';
 import { GAMES as DEFAULT_GAMES } from './constants';
 import { Loader2, Search, Ghost, ArrowLeft, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, CreditCard, X, ExternalLink } from 'lucide-react';
@@ -391,7 +390,6 @@ Downloads: ${item.downloads || 0}
         isDarkMode={isDarkMode}
       />
       
-      <GeminiChat games={games} isDarkMode={isDarkMode} />
     </div>
   );
 };
